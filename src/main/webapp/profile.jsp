@@ -1,8 +1,5 @@
-<%-- 
-    Document   : login.jsp
-    Created on : Sep 28, 2014, 12:04:14 PM
-    Author     : Administrator
---%>
+<!-- Dominick Dreczkowski -->
+<!-- ID: 110014287 -->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>
@@ -51,19 +48,18 @@
             LoggedIn userName = (LoggedIn) session.getAttribute("userName");
             if (lg != null) {
             String UserName = lg.getUsername();  
-            
         %>
         
-        <!-- Trying to get the firstName -->
+        <!-- Trying to get the first_name -->
         <%
-            LoggedIn firstName = (LoggedIn) session.getAttribute("firstName");
+            LoggedIn first_name = (LoggedIn) session.getAttribute("firstName");
             String FirstName = lg.getfirstName();    
         %>
            
-        <!-- Trying to get the secondName -->
+        <!-- Trying to get the last_name -->
         <%
-            LoggedIn secondName = (LoggedIn) session.getAttribute("secondName");
-            String SecondName = lg.getsecondName();    
+            LoggedIn last_name = (LoggedIn) session.getAttribute("lastName");
+            String LastName = lg.getlastName();    
         %>
         
         <!-- Trying to get the Email -->
@@ -73,19 +69,19 @@
         %>
         
 
-<a href="/Instagrim/editProfile">            
-<button class="button">Edit Profile</button>
-</a>
+        <a href="/Instagrim/editProfile">            
+        <button class="button">Edit Profile</button>
+        </a>
             
-<button class="button">Delete Profile</button>
+        <button class="button">Delete Profile</button>
 
-</br></br>
-<h3>Username:</h3> <%= UserName %>
-<h3>First name:</h3> <%= FirstName %>
-<h3>Second name:</h3> <%= SecondName %>
-<h3>Email</h3> <%= Email %>
-
-<%
+        </br></br>
+        <h3>Username:</h3> <%= UserName %>
+        <h3>First name:</h3> <%= first_name %>
+        <h3>Second name:</h3> <%= last_name %>
+        <h3>Email</h3> <%= Email %>
+        
+        <%
                     }%>
         
     </body>

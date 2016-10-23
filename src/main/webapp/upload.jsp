@@ -1,8 +1,5 @@
-<%-- 
-    Document   : upload
-    Created on : Sep 22, 2014, 6:31:50 PM
-    Author     : Administrator
---%>
+<!-- Dominick Dreczkowski -->
+<!-- ID: 110014287 -->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -30,7 +27,6 @@
                 <br/>
                 <input type="submit" value="Press"> to upload the file!
             </form>
-
         </article>
 
     </body>

@@ -1,8 +1,5 @@
-<%-- 
-    Document   : UsersPics
-    Created on : Sep 24, 2014, 2:52:48 PM
-    Author     : Administrator
---%>
+<!-- Dominick Dreczkowski -->
+<!-- ID: 110014287 -->
 
 <%@page import="java.util.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -11,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Instagrim</title>
+        <title>[ P i c s ]</title>
         <link rel="stylesheet" type="text/css" href="/Instagrim/Styles.css" />
     </head>
     
@@ -34,7 +31,9 @@
             java.util.LinkedList<Pic> lsPics = (java.util.LinkedList<Pic>) request.getAttribute("Pics");
             if (lsPics == null) {
         %>
+        
         <p>No Pictures found</p>
+        
         <%
         } else {
             Iterator<Pic> iterator;
@@ -49,7 +48,6 @@
             }
         %>
         </article>
-</body>
-    
-    
+
+</body> 
 </html>

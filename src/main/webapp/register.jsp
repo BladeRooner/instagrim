@@ -1,8 +1,5 @@
-<%-- 
-    Document   : register.jsp
-    Created on : Sep 28, 2014, 6:29:51 PM
-    Author     : Administrator
---%>
+<!-- Dominick Dreczkowski -->
+<!-- ID: 110014287 -->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -38,9 +35,9 @@
                     <br/><br/>
                     <li>Password: <input type="password" name="password"></li>
                     <br/><br/>
-                    <li>First Name: <input type="text" name="firstName"></li>
+                    <li>First Name: <input type="text" name="first_name"></li>
                     <br/><br/>
-                    <li>Second Name: <input type="text" name="secondName"></li>
+                    <li>Last Name: <input type="text" name="last_name"></li>
                     <br/><br/>
                     <li>Email: <input type="text" name="email"></li>
                     <br/><br/>  

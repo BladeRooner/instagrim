@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Dominick Dreczkowski 
+//ID: 110014287 
+
 
 package uk.ac.dundee.computing.aec.instagrim.stores;
 
@@ -13,8 +11,8 @@ package uk.ac.dundee.computing.aec.instagrim.stores;
 public class LoggedIn {
     boolean loggedin = false;
     String Username = null;
-    String firstName = null;
-    String secondName = null;
+    String first_name = null;
+    String last_name = null;
     String userEmail = null;
  
     public void LoggedIn(){
@@ -30,19 +28,19 @@ public class LoggedIn {
     }
     
     public String getfirstName(){
-        return firstName;
+        return first_name;
     }
     
     public void setfirstName(String first){
-            this.firstName=first;
+            this.first_name=first;
     }
 
-    public String getsecondName(){
-        return secondName;
+    public String getlastName(){
+        return last_name;
     }
     
-    public void setsecondName(String second){
-        this.secondName=second;
+    public void setlastName(String last){
+        this.last_name=last;
     }
     
     public String getuserEmail(){

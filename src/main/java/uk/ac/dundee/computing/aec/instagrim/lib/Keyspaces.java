@@ -1,3 +1,6 @@
+//Dominick Dreczkowski 
+//ID: 110014287 
+
 package uk.ac.dundee.computing.aec.instagrim.lib;
 
 import java.util.ArrayList;

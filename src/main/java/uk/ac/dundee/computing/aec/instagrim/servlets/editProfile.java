@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Dominick Dreczkowski 
+//ID: 110014287 
+
 package uk.ac.dundee.computing.aec.instagrim.servlets;
 
 import java.io.IOException;
@@ -13,6 +11,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import uk.ac.dundee.computing.aec.instagrim.models.User;
+import uk.ac.dundee.computing.aec.instagrim.stores.LoggedIn;
 
 /**
  *
@@ -51,14 +52,19 @@ public class editProfile extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     
-        String username=request.getParameter("username");
-        String firstName=request.getParameter("firstName");
-        String secondName=request.getParameter("secondName");
+        String first_name=request.getParameter("first_name");
+        String last_name=request.getParameter("last_name");
         String email=request.getParameter("email");
         
         response.sendRedirect("/Instagrim/Profile");
 
-    }
+        LoggedIn lg= new LoggedIn();
+        lg.setLoggedin();
+        lg.setfirstName(first_name);
+        lg.setlastName(last_name);
+        lg.setEmail(email);
+    } 
+
 
     /**
      * Returns a short description of the servlet.

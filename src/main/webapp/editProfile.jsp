@@ -13,29 +13,28 @@
     
     <body>
         <header>
-        <img src="http://i.imgur.com/e5y1v02.png">
+            <img src="http://i.imgur.com/e5y1v02.png">
         </header>
 
         <!-- Profile edit forms -->
         <form method="POST"  action="editProfile">           
 
-                <!-- Upload profile picture -->
-                <!-- Needs to link to a specific profile -->
+        <!-- Upload profile picture -->
+        <!-- Needs to link to a specific profile -->
         <form method="POST" enctype="multipart/form-data" action="Image">
             <li>Profile picture: <input type="file" name="upfile">
             </li><br/><br/>
    
-        <!-- Basic text stuff -->
-        <!-- Needs to link to a specific profile -->
-        <li>First name: <input type="text" name="firstName"></li>
-        <br/><br/>
-        <li>Second name: <input type="text" name="secondName"></li>
-        <br/><br/>
-        <li>Email: <input type="text" name="email"></li>
-        <br/><br/>
+            <!-- Basic text stuff -->
+            <!-- Needs to link to a specific profile -->
+            <li>First name: <input type="text" name="firstName"></li>
+            <br/><br/>
+            <li>Second name: <input type="text" name="secondName"></li>
+            <br/><br/>
+            <li>Email: <input type="text" name="email"></li>
+            <br/><br/>
     
-        <input type="submit" button class="button">
-        
+            <input type="submit" button class="button">
         </form>
                 
         <!-- Button links you back to the previous Profile page -->

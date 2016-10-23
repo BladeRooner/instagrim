@@ -1,8 +1,5 @@
-<%-- 
-    Document   : login.jsp
-    Created on : Sep 28, 2014, 12:04:14 PM
-    Author     : Administrator
---%>
+<!-- Dominick Dreczkowski -->
+<!-- ID: 110014287 -->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,7 +12,7 @@
     
     <body>
         <header>
-         <img src="http://i.imgur.com/e5y1v02.png">
+            <img src="http://i.imgur.com/e5y1v02.png">
         </header>
         
         <!-- Navbar -->
@@ -37,6 +34,7 @@
                     <li>User Name <input type="text" name="username"></li><br/>
                     <br/>
                     <li>Password <input type="password" name="password"></li>
+                    <br/><br/>
                 </br>
                 <br/>
                 <input type="submit" value="ENTER"> 

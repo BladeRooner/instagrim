@@ -1,8 +1,5 @@
-<%-- 
-    Document   : test
-    Created on : Sep 29, 2014, 9:16:48 AM
-    Author     : Administrator
---%>
+<!-- Dominick Dreczkowski -->
+<!-- ID: 110014287 -->
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="uk.ac.dundee.computing.aec.instagrim.stores.*" %>

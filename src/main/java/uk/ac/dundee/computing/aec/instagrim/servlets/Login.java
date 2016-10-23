@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Dominick Dreczkowski 
+//ID: 110014287 
 
 package uk.ac.dundee.computing.aec.instagrim.servlets;
 
@@ -49,8 +46,8 @@ public class Login extends HttpServlet {
         
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        String firstName=request.getParameter("firstName");
-        String secondName=request.getParameter("secondName");
+        String first_name=request.getParameter("first_name");
+        String last_name=request.getParameter("last_name");
         String email=request.getParameter("email");
         
         User us=new User();
@@ -64,8 +61,8 @@ public class Login extends HttpServlet {
             LoggedIn lg= new LoggedIn();
             lg.setLoggedin();
             lg.setUsername(username);
-            lg.setfirstName(firstName);
-            lg.setsecondName(secondName);
+            lg.setfirstName(first_name);
+            lg.setlastName(last_name);
             lg.setEmail(email);
             
             //request.setAttribute("LoggedIn", lg);
