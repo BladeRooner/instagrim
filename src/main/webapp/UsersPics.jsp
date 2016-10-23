@@ -14,22 +14,22 @@
         <title>Instagrim</title>
         <link rel="stylesheet" type="text/css" href="/Instagrim/Styles.css" />
     </head>
-    <body>
+    
         <header>
-        
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
+             <img src="http://i.imgur.com/e5y1v02.png">
         </header>
         
+        <!-- Navbar -->
         <nav>
-            <ul>
+            <ul class="a">
+                <li class="nav"><a href="/Instagrim/index.jsp">Home</a></li>
                 <li class="nav"><a href="/Instagrim/upload.jsp">Upload</a></li>
-                <li class="nav"><a href="/Instagrim/Images/majed">Sample Images</a></li>
+                <li class="nav"><a href="/Instagrim/profile.jsp">Profile</a></li>
             </ul>
         </nav>
  
         <article>
-            <h1>Your Pics</h1>
+            <h1>Images</h1>
         <%
             java.util.LinkedList<Pic> lsPics = (java.util.LinkedList<Pic>) request.getAttribute("Pics");
             if (lsPics == null) {
@@ -49,10 +49,7 @@
             }
         %>
         </article>
-        <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-            </ul>
-        </footer>
-    </body>
+</body>
+    
+    
 </html>

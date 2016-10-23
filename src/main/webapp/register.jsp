@@ -9,37 +9,45 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Instagrim</title>
+        <title>[ R e g i s t e r ]</title>
         <link rel="stylesheet" type="text/css" href="Styles.css" />
     </head>
     <body>
         <header>
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
+            <img src="http://i.imgur.com/e5y1v02.png">
         </header>
+
+        <!-- Navbar -->
         <nav>
-            <ul>
-                
-                <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
+            <ul class="a">
+                <li><a href="/Instagrim/">Home</a></li>
+                <li><a href="/Instagrim/Register">Register</a></li>
+                <li><a href="/Instagrim/Login">Login</a></li>
+                <li><a href="/Instagrim/Upload">Upload</a></li>
+                <li><a href="/Instagrim/Profile">Profile</a></li>
             </ul>
         </nav>
        
+        <!-- The title, username, password and enter -->
+        <ul class="b">
         <article>
-            <h3>Register as user</h3>
+            <h1>Register</h1>
             <form method="POST"  action="Register">
-                <ul>
-                    <li>User Name <input type="text" name="username"></li>
-                    <li>Password <input type="password" name="password"></li>
-                </ul>
-                <br/>
-                <input type="submit" value="Regidter"> 
-            </form>
 
+                    <li>User Name: <input type="text" name="username"></li>
+                    <br/><br/>
+                    <li>Password: <input type="password" name="password"></li>
+                    <br/><br/>
+                    <li>First Name: <input type="text" name="firstName"></li>
+                    <br/><br/>
+                    <li>Second Name: <input type="text" name="secondName"></li>
+                    <br/><br/>
+                    <li>Email: <input type="text" name="email"></li>
+                    <br/><br/>  
+    
+                <input type="submit" value="ENTER"> 
+            </form>
         </article>
-        <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-            </ul>
-        </footer>
+        
     </body>
 </html>

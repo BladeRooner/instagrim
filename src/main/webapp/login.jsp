@@ -9,38 +9,40 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Instagrim</title>
+        <title>[ L o g i n ]</title>
         <link rel="stylesheet" type="text/css" href="Styles.css" />
-
     </head>
+    
     <body>
         <header>
-        <h1>InstaGrim ! </h1>
-        <h2>Your world in Black and White</h2>
+         <img src="http://i.imgur.com/e5y1v02.png">
         </header>
+        
+        <!-- Navbar -->
         <nav>
-            <ul>
-                
-                <li><a href="/Instagrim/Images/majed">Sample Images</a></li>
+            <ul class="a">
+                <li><a href="/Instagrim/">Home</a></li>
+                <li><a href="/Instagrim/Register">Register</a></li>
+                <li><a href="/Instagrim/Login">Login</a></li>
+                <li><a href="/Instagrim/Upload">Upload</a></li>
+                <li><a href="/Instagrim/Profile">Profile</a></li>
             </ul>
         </nav>
        
+        <!-- Login form -->
         <article>
-            <h3>Login</h3>
-            <form method="POST"  action="Login">
-                <ul>
-                    <li>User Name <input type="text" name="username"></li>
+           <form method="POST"  action="Login">
+                <ul class="b">
+                    <h1>Login</h1>
+                    <li>User Name <input type="text" name="username"></li><br/>
+                    <br/>
                     <li>Password <input type="password" name="password"></li>
-                </ul>
+                </br>
                 <br/>
-                <input type="submit" value="Login"> 
-            </form>
-
+                <input type="submit" value="ENTER"> 
+                </ul>
+            </form>  
         </article>
-        <footer>
-            <ul>
-                <li class="footer"><a href="/Instagrim">Home</a></li>
-            </ul>
-        </footer>
+
     </body>
 </html>

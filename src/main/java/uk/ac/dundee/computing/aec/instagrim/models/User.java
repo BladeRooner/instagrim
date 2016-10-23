@@ -27,7 +27,7 @@ public class User {
         
     }
     
-    public boolean RegisterUser(String username, String Password){
+    public boolean RegisterUser(String username, String Password, String firstName, String secondName, String email){
         AeSimpleSHA1 sha1handler=  new AeSimpleSHA1();
         String EncodedPassword=null;
         try {
@@ -82,6 +82,4 @@ public class User {
        public void setCluster(Cluster cluster) {
         this.cluster = cluster;
     }
-
-    
 }

@@ -32,8 +32,6 @@ public class Register extends HttpServlet {
     }
 
 
-
-
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -47,15 +45,26 @@ public class Register extends HttpServlet {
             throws ServletException, IOException {
         String username=request.getParameter("username");
         String password=request.getParameter("password");
+        String first_name=request.getParameter("first_name");
+        String second_name=request.getParameter("second_name");
+        String email=request.getParameter("email");
         
         User us=new User();
         us.setCluster(cluster);
-        us.RegisterUser(username, password);
+        us.RegisterUser(username, password, first_name, second_name, email);
         
 	response.sendRedirect("/Instagrim");
         
     }
-
+    
+        protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        RequestDispatcher rd = request.getRequestDispatcher("register.jsp");
+        rd.forward(request, response);
+        
+    }
+        
     /**
      * Returns a short description of the servlet.
      *
